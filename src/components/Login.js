@@ -11,7 +11,8 @@ export const Login = () => {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:3001/users/verify', {
+            const response = await fetch('https://bionic-backend-7v9q.onrender.com/users/verify', {
+            // const response = await fetch('http://localhost:3001/users/verify', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email, password }),

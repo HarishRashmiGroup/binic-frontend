@@ -16,7 +16,8 @@ const CourseUrlChange = () => {
     useEffect(() => {
         const fetchCourses = async () => {
             try {
-                const response = await fetch("http://localhost:3001/courses", {
+                const response = await fetch("https://bionic-backend-7v9q.onrender.com/courses", {
+                // const response = await fetch("http://localhost:3001/courses", {
                     headers: {
                         "Content-Type": "application/json",
                         Authorization: `Bearer ${localStorage.getItem("token") || ""}`,
@@ -69,7 +70,8 @@ const CourseUrlChange = () => {
 
 
         try {
-            const response = await fetch("http://localhost:3001/courses/update", {
+            const response = await fetch("https://bionic-backend-7v9q.onrender.com/courses/update", {
+            // const response = await fetch("http://localhost:3001/courses/update", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

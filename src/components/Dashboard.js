@@ -205,7 +205,8 @@ const Dashboard = () => {
           return;
         }
 
-        const response = await fetch('http://localhost:3001/users/basic', {
+        const response = await fetch('https://bionic-backend-7v9q.onrender.com/users/basic', {
+        // const response = await fetch('http://localhost:3001/users/basic', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
